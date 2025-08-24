@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing Speed Test Game</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="game">
+        <div class="name">Typing Speed Test Game</div>
+        <div class="container">
+            <div class="level-select">
+                <label for="level">Choose Difficulty:</label>
+                <select id="level">
+                    <option value="Easy">Easy</option>
+                    <option value="Normal" selected>Normal</option>
+                    <option value="Hard">Hard</option>
+                </select>
+            </div>
+            <!-- Instructions Section -->
+            <div class="instructions">
+                <h2>How To Play</h2>
+                <p>
+                    Type the displayed word before the time runs out. Each level has its own time limit per word.
+                </p>
+                <table>
+                    <tr>
+                        <th>Level</th>
+                        <th>Seconds per word</th>
+                    </tr>
+                    <tr>
+                        <td>Easy</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Normal</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Hard</td>
+                        <td>2</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="message">
+                You Are Playing On
+                <span class="lvl"></span> Level & you Have <span class="seconds"></span> Seconds To Type The Word
+            </div>
+            <div class="start">Start Playing</div>
+            <div class="the-word"></div>
+            <input type="text" class="input" />
+            <div class="upcoming-words">Words Will Show Here</div>
+            <div class="control">
+                <div class="time">Time Left: <span></span> Seconds</div>
+                <div class="score">Score: <span class="got">0</span> From <span class="total"></span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Overlay for Finish Message -->
+    <div class="overlay" id="overlay">
+        <div class="popup">
+            <h2 id="popup-title"></h2>
+            <button onclick="location.reload()">Play Again</button>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
