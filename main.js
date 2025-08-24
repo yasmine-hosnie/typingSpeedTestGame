@@ -2,14 +2,14 @@
 const easyWords = [
   "apple",
   "banana",
-//   "cherry",
-//   "grape",
-//   "orange",
-//   "mango",
-//   "lemon",
-//   "strawberry",
-//   "peach",
-//   "pear",
+  "cherry",
+  "grape",
+  "orange",
+  "mango",
+  "lemon",
+  "strawberry",
+  "peach",
+  "pear",
 ];
 
 const normalWords = [
@@ -161,4 +161,5 @@ function showPopup(message, type) {
   popupTitle.className = type;
   overlay.style.display = "flex";
 }
+
 
